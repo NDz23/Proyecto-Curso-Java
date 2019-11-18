@@ -1,16 +1,67 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
+<!DOCTYPE html>
+
 <html>
   <head>
-    <title>TODO supply a title</title>
+    <title>Manejo Cursos INNOVA BPO - Logueo</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/all.css">
+
   </head>
-  <body>
-    <div>TODO write content</div>
+  <body class="bg-secondary">
+    <div id="cuerpo" class="container-fluid my-5">
+      <div class="row justify-content-md-center">
+        <div class="row">
+          <div class="col-12">
+            <div class="row py-5 my-5">
+              <div class="card text-white bg-dark">
+                <div class="card-header blanco text-center p-2">
+                  <h3 class="card-title p-1 m-0">Manejo de Cursos</h3>
+                  <h5 class="card-title pb-1 m-0">Login maestros y administradores</h5>
+                </div>
+                <div class="card-body pt-1">
+                  <form id="login" method="post">
+                    <div class="input-group my-3">
+                      <div class="input-group-prepend bg-dark">
+                        <div class="input-group-text bg-dark text-white">Correo</div>
+                      </div>
+                      <input type="email" class="form-control bg-dark text-white" id="inlineFormInputGroup" placeholder="Ingrese su correo">
+                    </div>
+                    <div class="input-group my-3">
+                      <div class="input-group-prepend bg-dark">
+                        <div class="input-group-text bg-dark text-white">Contraseña</div>
+                      </div>
+                      <input type="password" class="form-control bg-dark text-white" id="inlineFormInputGroup" placeholder="Ingrese su contraseña">
+                    </div>
+                    <button type="submit" class="btn btn-block btn-outline-light">Ingresar</button>
+                  </form>
+                </div>
+
+                <div class="card-footer text-center p-2">
+                  <div class="row justify-content-md-center p-0 m-0">
+                    <p class="text-muted">Si ingresa con credenciales de maestro solo tendra permisos de maestro.</p>
+                  </div>
+                  <div class="row justify-content-md-center p-0 pb-1 m-0">
+                    <p class="card-text p-0 m-0">© 2019 Curso de Java/MySQL</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/all.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
