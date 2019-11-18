@@ -1,0 +1,52 @@
+.img-perfil{
+  width: 10vh;
+  height: 10vh;
+  border-radius: 50%;
+  margin: 20px;
+  object-fit: cover;
+  object-position: center left;
+}
+.img-perfil-perfil{
+  width: 30vh;
+  height: 30vh;
+  border-radius: 50%;
+  margin: 20px;
+  object-fit: cover;
+  object-position: center left;
+}
+.img-perfil-publicacion{
+  width: 8vh;
+  height: 8vh;
+  border-radius: 50%;
+  margin: 20px;
+  object-fit: cover;
+  object-position: center left;
+}
+.img-perfil-historia{
+  width: 6vh;
+  height: 6vh;
+  border-radius: 50%;
+  margin: 20px;
+  object-fit: cover;
+  object-position: center left;
+  border: 2px solid #ff0000;
+}
+.img-perfil-mini{
+  width: 6vh;
+  height: 6vh;
+  border-radius: 50%;
+  margin: 20px;
+  object-fit: cover;
+  object-position: center left;
+}
+.historias {
+    max-height: 25vh;
+    overflow-y: auto;
+}
+.cuerpo{
+margin: 20px;
+border-bottom: black;
+}
+.btn-eliminar{
+     
+}
