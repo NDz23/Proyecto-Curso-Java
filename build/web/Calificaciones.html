@@ -3,7 +3,7 @@
         <title>Calificaciones</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">    </head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
         <meta charset="UTF-8">
         <link rel="stylesheet" href="css/index.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -11,6 +11,8 @@
         <link rel="stylesheet" href="css/bootstrap-grid.min.css">
         <link rel="icon" href="img/favicon.png">
         <link rel="stylesheet" href="css/all.css">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">    
+    </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-dark">
             <a class="navbar-brand text-white" href="#">Administración</a>
@@ -41,31 +43,154 @@
 
 
             </div>
-        </nav><br/>
-        <div align="center"><h2>Calificaciones</h2></div>
-        
-        <table align="center" class="table table-bordered table-striped">
-  <thead>
-    <tr>
-      <th class="border-dark">Alumno</th>
-      <th class="border-dark">1er Parcial</th>
-      <th class="border-dark">2do parcial</th>
-      <th class="border-dark">3er Parcial</th>
-      <th class="border-dark">Promedio</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-        <td >David</td>
-      <td>aprobado</td>
-      <td>aprobado</td>
-      <td>se quedo</td>
-      <td>de panzazo</td>
-    </tr>
- 
-  </tbody>
-</table>
+        </nav>
+        <br/>
+        <div align="center"><h2>Calificaciones</h2></div> 
+        <div align="right">
+            <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#insertar">
+                Insertar nota
+            </button>
+            <button type="button" class="btn btn-outline-dark">Actualizar</button> 
+            <!-- Button trigger modal -->
+            <!-- Modal -->
+            <div class="modal fade" id="insertar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Insertar Nota</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body " align="left">
+                            <form>
+                                <div class="form-group">
+                                    <label>Alumno</label>
+                                    <select id="alumnos" class="form-control " >
+                                        <option value="">Choose...</option>
+                                        <optgroup label="Option group 1">
+                                            <option value="">Option 1</option>
+                                            <option value="">Option 2</option>
+                                            <option value="">Option 3</option>
+                                        </optgroup>
+                                    </select> 
+                                </div>
 
-            </tbody></table>
-    </body>
+                                <div class="form-group">
+                                    <label>Parcial</label>
+                                    <select id="parciales" class="form-control " >
+                                        <option value="">Choose...</option>
+                                        <optgroup label="Option group 1">
+                                            <option value="">Option 1</option>
+                                            <option value="">Option 2</option>
+                                            <option value="">Option 3</option>
+                                        </optgroup>
+                                    </select> 
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroup-sizing-default">Nota</span>
+                                        </div>
+                                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary">Guardar cambios</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="borrar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Eliminar Nota</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body " align="left">
+                            <form>
+                                <div class="form-group">
+                                    <div class="alert alert-warning" role="alert">
+                                        Estas seguro?
+                                    </div>
+
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                            <button type="button" class="btn btn-primary">Aceptar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="editar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content bg-dark">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Editar Nota</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body " align="left">
+                        <form>
+                            <div class="form-group">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputGroup-sizing-default">Nota</span>
+                                    </div>
+                                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary">Guardar cambios</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <table align="center" class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th class="border-dark">Alumno</th>
+                    <th class="border-dark">1er Parcial</th>
+                    <th class="border-dark">2do parcial</th>
+                    <th class="border-dark">3er Parcial</th>
+                    <th class="border-dark">Promedio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="">
+                    <td ><label>David </label></td>
+                    <td > <label>aprobado </label> <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#Borrar"><i class="fa fa-eraser"></i></button> 
+                        <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#editar"><i class="fa fa-edit"></i></button></td>
+                    <td><label>aprobado</label> <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#Borrar"><i class="fa fa-eraser"></i></button>
+                        <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#editar"><i class="fa fa-edit"></i></button></td></td>
+                    <td><label>aprobado</label> <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#Borrar"><i class="fa fa-eraser"></i></button>
+                        <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#editar"><i class="fa fa-edit"></i></button></td></td>
+                    <td><label>aprobado</label> </td>
+                </tr>
+
+            </tbody>
+        </table>
+
+    </tbody></table>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
 </html>
