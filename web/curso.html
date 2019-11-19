@@ -13,7 +13,89 @@
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-            <a class="navbar-brand text-white" href="#">Administraci <form>
+            <a class="navbar-brand text-white" href="#">Administración</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link text-white" href="#">Inicio <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white " href="#">Crear Cursos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Registro Maestros</a>
+                    </li>
+                </ul>
+                <span class="navbar-text text-white">
+                    Usuario
+                </span>
+
+            </div>
+            <div class="dropdown" align="left" >
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" >
+                    <img src="img/avatar.png"  class="icono-perfil">
+                </button>
+
+
+            </div>
+        </nav><br/>
+        <h1 class="text-center">Java</h1>
+        <h1 class="text-muted">Alumnos Registrados</h1>
+
+        <table class="table table-hover table-dark">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nombres</th>
+                    <th scope="col">Apellidos</th>
+                    <th scope="col">Telefono</th>
+                    <th scope="col">correo</th>
+                     <th scope="col">Informacion academica</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>50499000000</td>
+                    <td>correo@correo</td>
+                    <td>
+                        <button type="button" class="btn btn-secondary">Informacion Academica</button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>50499000000</td>
+                    <td>correo@correo</td>
+                     <td>
+                        <button type="button" class="btn btn-secondary">Informacion Academica</button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td >Larry </td>
+                    <td>Bird</td>
+                    <td>50499000000</td>
+                    <td>correo@correo</td>
+                     <td>
+                        <button type="button" class="btn btn-secondary">Informacion Academica</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table><br/>
+
+        <h1 class="text-center text-muted">Registrar nuevo alumno</h1><br/>
+        <div class="card bg-dark text-white">
+            <div class="row ">
+                <div class="col">    
+
+                    <form>
                         <div class="form-row">
                             <div class="form-group col-md-6">
                                 <label for="Nombres">Nombres</label>
