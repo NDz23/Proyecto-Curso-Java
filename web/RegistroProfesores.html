@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Registro Profesores</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+        <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+        <link rel="icon" href="img/favicon.png">
+        <link rel="stylesheet" href="css/all.css">
+
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+            <a class="navbar-brand text-white" href="#">Administración</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link text-white" href="#">Inicio <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white " href="#">Crear Cursos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Registro Maestros</a>
+                    </li>
+                </ul>
+                <span class="navbar-text text-white">
+                    Usuario
+                </span>
+
+            </div>
+            <div class="dropdown" align="left" >
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" >
+                    <img src="img/avatar.png"  class="icono-perfil">
+                </button>
+            </div>
+        </nav><br/>
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col col-lg-8 align-self-center">
+                    <div class="card bg-dark text-center text-white">
+                        <div class="card-header">
+                            <h2 class="font-weight-bold">Registro Profesores</h2>
+                        </div>
+                        <div class="card-body card bg-dark text-white">
+                            <form class="needs-validation" novalidate>
+                                <div class="form-row">
+                                    <div class="col-md-4 mb-3">
+                                        <label for="validationTooltip01">Nombres</label>
+                                        <input type="text" class="form-control" id="validationTooltip01" placeholder="Nombres" value="Nombres" required>
+                                        <div class="valid-tooltip">
+                                            Listo!
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <label for="validationTooltip02">Apellidos</label>
+                                        <input type="text" class="form-control" id="validationTooltip02" placeholder="Apellidos" value="Apellidos" required>
+                                        <div class="valid-tooltip">
+                                            Listo!
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <label for="validationTooltipUsername">Username</label>
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+                                            </div>
+                                            <input type="text" class="form-control" id="validationTooltipUsername" placeholder="Usuario" aria-describedby="validationTooltipUsernamePrepend" required>
+                                            <div class="invalid-tooltip">
+                                                Ese Usuario es invalido.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-md-3 mb-3">
+                                        <label for="validationTooltip03">Contraseña</label>
+                                        <input type="password" class="form-control" id="validationTooltip06" placeholder="Contraseña" required>
+                                        <div class="invalid-tooltip">
+                                            Please provide a valid city.
+                                        </div>
+                                    </div>
+                                <div class="form-row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="validationTooltip03">Identidad</label>
+                                        <input type="text" class="form-control" id="validationTooltip03" placeholder="Numero de Identidad" required>
+                                        <div class="invalid-tooltip">
+                                            Please provide a valid city.
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 mb-3">
+                                        <label for="validationTooltip04">Correo</label>
+                                        <input type="text" class="form-control" id="validationTooltip04" placeholder="Correo" required>
+                                        <div class="invalid-tooltip">
+                                            Please provide a valid state.
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 mb-3">
+                                        <label for="validationTooltip05">Telefono</label>
+                                        <input type="text" class="form-control" id="validationTooltip05" placeholder="Numero de Telefono" required>
+                                        <div class="invalid-tooltip">
+                                            Please provide a valid zip.
+                                        </div>
+                                    </div>
+                                    <label>Fecha de Nacimiento</label>
+                                    <input type="date" class="form-control">
+                                    <label>Sexo</label>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1">F</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                        <label class="form-check-label" for="inlineRadio2">M</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 mb-3">
+                                    <label for="validationTooltip04" >Direccion</label>
+                                    <textarea class="form-control" style="width: 100%" id="validationTooltip04" placeholder="direccion" required></textarea>
+                                         <div class="valid-tooltip">
+                                        Listo!
+                                    </div>
+                                </div>
+                                <button class="btn btn-primary" type="submit">Registrar</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/all.js"></script>
+        <script src="js/bootstrap.bundle.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/index.js"></script>
+        <script src="js/jquery-3.4.1.min.js"></script>
+
+    </body>
+
+</html>
