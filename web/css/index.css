@@ -1,12 +1,3 @@
-body{
-  background-color: whitesmoke;
-}
-#img-letras{
-  max-height: 8vh;
-}
-.blanco{
-  background-color: white;
-}
 .icono-perfil{
   width: 5vh;
   height: 5vh;
@@ -14,4 +5,4 @@ body{
   margin: 5px;
   object-fit: cover;
   object-position: center left;
-  border: 1px solid #f31c1c;
+}
